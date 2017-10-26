@@ -28,17 +28,12 @@ namespace Lab3Final
                         success = false;
                     }
                 }
-
-
                     for (int i = 1; i == 1; i++)
                     {
                         Console.Write("Number\t");
                         Console.Write("Squared\t");
                         Console.Write("Cubed\t");
                         Console.WriteLine();
-                    }
-                    for (int i = 1; i == 1; i++)
-                    {
                         Console.Write("=======\t");
                         Console.Write("=======\t");
                         Console.Write("=======\t");
@@ -50,13 +45,11 @@ namespace Lab3Final
                         Console.Write("{0}\t", Math.Pow(i,2));
                         Console.Write("{0}\t", Math.Pow(i,3));
                         Console.WriteLine();
-
                     }
-
                 
-                Console.WriteLine("Would you like to run this program again? (Y/N)");
-                var repeat = Console.ReadLine();
-                if (repeat == "y" || repeat == "Y")
+                Console.WriteLine("Would you like to run this program again? (Yes/No)");
+                string repeat = Console.ReadLine().ToLower();
+                if (repeat == "yes" || repeat == "y" || repeat == "yeah" || repeat == "yep")
                 {
                     success = true;
                 }
